@@ -1,0 +1,51 @@
+@font-face {
+  font-family: 'europeextendedc';
+  src: url("../fonts/europeextendedc_italic.woff2") format('woff2'),
+    url("../fonts/europeextendedc_italic.woff") format('woff'),
+    url("../fonts/europeextendedc_italic.eot") format('eot');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'europeextendedc';
+  src: url("../fonts/europeextendedc.woff2") format('woff2'),
+    url("../fonts/europeextendedc.woff") format('woff'),
+    url("../fonts/europeextendedc.eot") format('eot');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'europeextendedc';
+  src: url("../fonts/europeextendedc_bolditalic.woff2") format('woff2'),
+    url("../fonts/europeextendedc_bolditalic.woff") format('woff'),
+    url("../fonts/europeextendedc_bolditalic.eot") format('eot');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'europeextendedc';
+  src: url("../fonts/europeextendedc_bold.woff2") format('woff2'),
+    url("../fonts/europeextendedc_bold.woff") format('woff'),
+    url("../fonts/europeextendedc_bold.eot") format('eot');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Indieutka Pixel8';
+  src: url("../fonts/Indieutka Pixel8.woff2") format('woff2'),
+    url("../fonts/Indieutka Pixel8.woff") format('woff'),
+    url("../fonts/Indieutka Pixel8.eot") format('eot');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
