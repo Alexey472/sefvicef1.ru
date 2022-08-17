@@ -4,8 +4,8 @@ html, body {
 }
 
 .wrapper {
-  background: url("../img/background-right.png") right top no-repeat,
-    url("../img/background-left.png") left top no-repeat;
+  background: url("../img/background-right.svg") right top no-repeat,
+    url("../img/background-left.svg") left top no-repeat;
   background-size: auto 100%;
 }
 
