@@ -1283,6 +1283,11 @@ svg {
 }
 
 @media (max-width: 400px) {
+  .container {
+    padding: 0 5px;
+}
+
+
   .input {
     padding: 14px 20px;
   }
@@ -1292,15 +1297,15 @@ svg {
   }
 
   .header__box-wrapper {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .header__block-cell {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .header__block-info {
-    font-size: 7px;
+    font-size: 8px;
   }
 
   .header__wrapper-subtitle {
