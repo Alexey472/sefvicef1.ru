@@ -139,7 +139,7 @@ html, body {
   position: relative;
 }
 
-.header__nav-toggle label.toggleMenu {
+label.toggleMenu {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -151,12 +151,13 @@ html, body {
   margin: 3px;
 }
 
-.header__nav-toggle img {
+label svg {
   position: absolute;
   left: 3%;
+  bottom: 25%;
 }
 
-.header__nav-toggle {
+label.toggleMenu {
   display: none;
 }
 
@@ -214,7 +215,7 @@ svg {
   color: #000;
 }
 
-.burger:hover path {
+.header__nav-link:hover path {
   stroke: #000;
   stroke-width: #000;
 }
@@ -225,8 +226,6 @@ svg {
 
 .header__nav-sublist {
   display: none;
-  position: absolute;
-  top: 95%;
 }
 
 .header__nav-item:hover .header__nav-sublist {
@@ -703,14 +702,6 @@ svg {
     display: block;
   }
 
-  .header__nav-sublist {
-    display: none;
-  }
-
-  .header__nav-list {
-    display: flex;
-  }
-
   .main__services-block {
     gap: 20px;
   }
@@ -815,18 +806,62 @@ svg {
     display: none;
   }
 
-  .header__nav-toggle {
-    display: block;
+  label.toggleMenu {
+    display: flex;
+    transition: all .3s ease;
   }
 
   .header__nav-list {
+    display: none;
+  }
+
+  .header__nav-item {
+    transition: all .3s ease;
+  }
+
+  .header__nav-item:hover .header__nav-sublist {
+    display: block;
+    position: relative;
+  }
+
+  input.toggleMenu:checked+label.toggleMenu {
+    background: linear-gradient(350.26deg, #FBBE00 -9.24%, #FDD700 51.16%, #FFE600 104.85%, #FFEB00 149.59%);
+    color: #000;
+  }
+
+  input.toggleMenu:checked+label.toggleMenu path {
+    stroke: #000;
+    stroke-width: #000;
+  }
+
+  input.toggleMenu:checked~.header__nav-list {
     display: block;
     position: absolute;
+  }
+
+  .header__nav-link {
+    position: relative;
+  }
+
+  label.toggleSubmenu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+  input.toggleSubmenu:checked~.header__nav-link {
+    background: linear-gradient(350.26deg, #FBBE00 -9.24%, #FDD700 51.16%, #FFE600 104.85%, #FFEB00 149.59%);
+    color: #000;
   }
 
   .header__nav-list li {
     background: rgba(61, 61, 61, .3);
   }
+
+
 
   .header__nav-sublist {
     margin-top: 5px;
@@ -901,7 +936,7 @@ svg {
     font-size: 18px;
   }
 
-  .header__nav-toggle label.toggleMenu {
+  label.toggleMenu {
     padding: 5px 132px;
     font-size: 18px;
   }
@@ -914,7 +949,7 @@ svg {
     width: 10px;
   }
 
-  .header__nav-toggle img {
+  svg {
     width: 25px;
   }
 
@@ -925,6 +960,7 @@ svg {
   .main__slider-article {
     padding: 2.4% 3%;
     position: relative;
+    height: 240px;
   }
 
   .slick-prev:before, .slick-next:before {
@@ -937,6 +973,16 @@ svg {
 
   .slick-next {
     right: 3%;
+  }
+
+  .main__slider-article img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 75% 242%;
+    position: absolute;
+    left: 0%;
+    top: -10%;
   }
 
   .main__services-block {
@@ -1113,12 +1159,12 @@ svg {
     margin: 0 74.5px;
   }
 
-  .header__nav-toggle img {
+  label.toggleMenu svg {
     left: 7%;
   }
 
 
-  .header__nav-toggle label.toggleMenu {
+  label.toggleMenu {
     padding: 5px 115px;
     font-size: 15px;
   }
@@ -1175,7 +1221,7 @@ svg {
     font-size: 18px;
   }
 
-  .header__nav-toggle label.toggleMenu {
+  label.toggleMenu {
     padding: 5px 115px;
   }
 
@@ -1259,7 +1305,7 @@ svg {
     margin: 0px 48px;
   }
 
-  .header__nav-toggle label.toggleMenu {
+  label.toggleMenu {
     padding: 5px 79px;
   }
 
@@ -1285,7 +1331,7 @@ svg {
 @media (max-width: 400px) {
   .container {
     padding: 0 5px;
-}
+  }
 
 
   .input {
@@ -1300,9 +1346,6 @@ svg {
     font-size: 12px;
   }
 
-  .header__block-cell {
-    font-size: 16px;
-  }
 
   .header__block-info {
     font-size: 8px;
@@ -1330,7 +1373,7 @@ svg {
     font-size: 11px;
   }
 
-  .header__nav-toggle label.toggleMenu {
+  label.toggleMenu {
     min-height: 33px;
     font-size: 11px;
   }
@@ -1376,5 +1419,27 @@ svg {
   .footer__info-button {
     font-size: 14px;
     margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 375px) {
+  .header__box-wrapper {
+    font-size: 14px;
+  }
+
+  .header__block-cell {
+    font-size: 18.5px;
+  }
+
+  .header__block-info {
+    font-size: 9px;
+  }
+
+  label.toggleMenu {
+    font-size: 14px;
+  }
+
+  .header__nav-button {
+    font-size: 14px;
   }
 }
