@@ -1028,6 +1028,7 @@ svg {
       linear-gradient(to right, #fff, #686868) border-box;
     border: 4px solid transparent;
     border-radius: 25px;
+    opasity: 1;
   }
 
   .header__top {
